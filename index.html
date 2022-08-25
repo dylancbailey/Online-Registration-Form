@@ -14,12 +14,12 @@
         <h1>The Code Review</h1>
     </header>
 
-    <section class="form-prompt">
+    <section class="form-call-to-action">
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
     </section>
 
-    <form action="main-form">
+    <form>
         <fieldset class="contact-information">
             <legend>Contact Information</legend>
             <label for="name">Full Name</label>
@@ -93,18 +93,18 @@
         <fieldset class="newsletter">
             <legend>Newsletter</legend>
             <p>Select the newsletters you would like to receive</p>
-            <input type="checkbox" name="html-check" id="html-check" value="html-check">
-            <label for="html-check">HTML News</label>
-            <input type="checkbox" name="css-check" id="css-check" value="css-check">
-            <label for="css-check">CSS News</label>
-            <input type="checkbox" name="js-check" id="js-check" value="js-check">
-            <label for="js-check">Javascript News</label>
+            <input type="checkbox" name="html-check" id="check-html" value="HTML-CHECKBOX">
+            <label for="check-html">HTML News</label>
+            <input type="checkbox" name="css-check" id="check-css" value="CSS-CHECKBOX">
+            <label for="check-css">CSS News</label>
+            <input type="checkbox" name="js-check" id="check-js" value="JS-CHECKBOX">
+            <label for="check-js">Javascript News</label>
             <p>Newsletter format</p>
-            <input type="radio" name="newsletter" id="html-btn">
-            <label for="html-btn">HTML</label>
-            <input type="radio" name="newsletter" id="text-btn">
-            <label for="text-btn">Plain text</label>
-            <p>Other topics yu'd like to hear about</p>
+            <input type="radio" name="newsletter" id="html-select" value="HTML-RADIO">
+            <label for="html-select">HTML</label>
+            <input type="radio" name="newsletter" id="text-select" value="TEXT-RADIO">
+            <label for="text-select">Plain text</label>
+            <p>Other topics you'd like to hear about</p>
             <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
             <button type="button">Sign Up</button>
         </fieldset>
