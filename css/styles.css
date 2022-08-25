@@ -1,3 +1,94 @@
+/* Basic Styling */
+body {
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 1.1;
+    width: 100%;
+}
+h1,
+h2,
+legend {
+    color: #2e3f48;
+    font-weight: 900;
+}
+label,
+input[type="radio"],
+input[type="checkbox"],
+form p {
+    color: #5c6e7f;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.signup p,
+footer p {
+    color: #adb2b7;
+    font-size: .9rem;
+}
+fieldset {
+    border: 0;
+}
+input {
+    border: 0;
+    background: #eff0f1;
+}
+input::placeholder {
+    font-size: .7rem;
+    text-align: right;
+}
+button {
+    background-color: #4cbbb4;
+    color: white;
+}
+
+/* Header */
+header {
+    background: #2d3945;
+    padding: 1.8rem 0;
+}
+h1 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+/* Signup */
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+.signup h2 {
+    margin: 2rem 0 .8rem 0;
+    font-size: 1.2rem;
+}
+.signup p {
+    margin: 0;
+    padding: 0 1rem;
+}
+/* Contact Form*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    font-size: .75rem;
+}
+
+textarea {
+    width: 100%;
+}
+
 /* Media Queries */
 @media screen and (min-width: 768px) {
     
