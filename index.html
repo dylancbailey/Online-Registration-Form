@@ -21,9 +21,8 @@
     <section class="signup">
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
+        <div class="bottom-border"></div>
     </section>
-
-    <div class="bottom-border"></div>
 
     <!-- Contact Info -->
     <form action="" method="post">
@@ -42,7 +41,7 @@
             <input type="text" name="city" id="city">
             <label for="state">State</label>
             <select name="state" id="state">
-                <option value="" disabled selected>Choose State</option>
+                <option value="choose-state" disabled selected>Choose State</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -103,18 +102,25 @@
         <div class="top-border"></div>
         <fieldset class="newsletter">
             <legend>Newsletter</legend>
-            <p>Select the newsletters you would like to receive</p>
-            <input type="checkbox" name="html-check" id="check-html" value="HTML-CHECKBOX">
-            <label for="check-html">HTML News</label>
-            <input type="checkbox" name="css-check" id="check-css" value="CSS-CHECKBOX">
-            <label for="check-css">CSS News</label>
-            <input type="checkbox" name="js-check" id="check-js" value="JS-CHECKBOX">
-            <label for="check-js">Javascript News</label>
-            <p>Newsletter format</p>
-            <input type="radio" name="newsletter" id="html-select" value="HTML-RADIO">
-            <label for="html-select">HTML</label>
-            <input type="radio" name="newsletter" id="text-select" value="TEXT-RADIO">
-            <label for="text-select">Plain text</label>
+
+            <div class="checks">
+                <p>Select the newsletters you would like to receive</p>
+                <input type="checkbox" name="html-check" id="check-html" value="HTML-CHECKBOX">
+                <label for="check-html">HTML News</label><br>
+                <input type="checkbox" name="css-check" id="check-css" value="CSS-CHECKBOX">
+                <label for="check-css">CSS News</label><br>
+                <input type="checkbox" name="js-check" id="check-js" value="JS-CHECKBOX">
+                <label for="check-js">Javascript News</label>
+            </div>
+
+            <div class="checks">
+                <p>Newsletter format</p>
+                <input type="radio" name="newsletter" id="html-select" value="HTML-RADIO">
+                <label for="html-select">HTML</label><br>
+                <input type="radio" name="newsletter" id="text-select" value="TEXT-RADIO">
+                <label for="text-select">Plain text</label>
+            </div>
+
             <p>Other topics you'd like to hear about</p>
             <textarea name="comments" id="comments"></textarea>
             <button type="button">Sign Up</button>
