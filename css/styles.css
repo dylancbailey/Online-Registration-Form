@@ -49,10 +49,11 @@ input,
 textarea,
 select {
     width: 100%;
-    padding: .75rem 0;
+    padding: .8rem 0;
     border: 0;
     background: #eff0f1;
     border-radius: 5px;
+    font-size: .75rem;
 }
 input::placeholder {
     font-size: .7rem;
@@ -68,18 +69,12 @@ textarea:focus {
 select[name="state"] {
     font-size: .75rem;
     color: #bdc5c8;
+    padding-left: 10px;
 }
 select option {
     color: #5c6e7f;
 }
-button {
-    background-color: #4cbbb4;
-    color: white;
-    width: 100%;
-    border: 0;
-    padding: 1.2rem 0;
-    margin-top: 1.5rem;
-}
+
 
 /* Header */
 header {
@@ -142,7 +137,9 @@ select {
 
 input[type="checkbox"],
 input[type="radio"] {
-    width: 1rem;
+    width: .75rem;
+    height: .75rem;
+    vertical-align: middle;
 }
 
 .checks {
@@ -150,10 +147,32 @@ input[type="radio"] {
     padding-left: .2rem;
 }
 
+.checks label {
+    margin-left: 5px;
+}
+
 textarea {
     min-width: 100%;
     min-height: 5rem;
     resize: none;
+}
+
+button {
+    background-color: #4cbbb4;
+    color: white;
+    width: 100%;
+    border: 0;
+    padding: 1.2rem 0;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    transition: .5s ease;
+    font-weight: bold;
+}
+button:active {
+    background: #2e3f48;
+}
+button:hover {
+    cursor: pointer;
 }
 
 /* Footer */
@@ -169,5 +188,42 @@ footer p {
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
-    
+    /* Header */
+    .signup {
+        max-width: 768px;
+        width: 100%;
+    }
+    .bottom-border {
+        max-width: 768px;
+        width: 95%;
+    }
+    .top-border {
+        max-width: 768px;
+        width: 95%;
+    }
+    form {
+        max-width: 768px;
+    }
+    .contact-information {
+        max-width: 768px;
+    }
+    .contact-information label {
+        width: 9rem;
+        display: inline-block;
+        margin: 1.2rem 0;
+    }
+    .contact-information input,
+    select {
+        width: 79%;
+        display: inline-block;
+    }
+    input[name="zip"] {
+        width: 20%
+    }
+    .contact-information label,
+    .newsletter label,
+    .newsletter p {
+        font-weight: bold;
+    }
+
 }
