@@ -1,10 +1,10 @@
 /* Basic Styling */
 body {
     font-family: 'Merriweather', serif;
+    background-color: white;
     font-weight: 600;
     font-size: 1.2em;
     line-height: 1.1;
-    width: 100%;
 }
 h1,
 h2,
@@ -28,6 +28,18 @@ footer p {
 fieldset {
     border: 0;
 }
+.top-border {
+    max-width: 320px;
+    width: 90%;
+    margin: .2rem auto 1.5rem auto;
+    border-top: 3px solid #2e3f48;
+}
+.bottom-border {
+    max-width: 320px;
+    width: 90%;
+    margin: auto;
+    border-bottom: 5px solid #2e3f48;
+}
 input {
     border: 0;
     background: #eff0f1;
@@ -43,50 +55,49 @@ button {
 
 /* Header */
 header {
-    background: #2d3945;
+    width: 100%;
+    background: #2e3f48;
     padding: 1.8rem 0;
+    text-transform: uppercase;
 }
-h1 {
+header h1 {
     margin: 0;
+    font-size: 1.3rem;
     color: white;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 1.2rem;
 }
+
 /* Signup */
 .signup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    max-width: 320px;
+    margin: auto;
+    padding: 1rem 0 1.5rem 0;
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 2rem;
 }
+
 .signup h2 {
-    margin: 2rem 0 .8rem 0;
     font-size: 1.2rem;
 }
-.signup p {
-    margin: 0;
-    padding: 0 1rem;
-}
+
 /* Contact Form*/
 form {
-    display: flex;
-    flex-direction: column;
+    max-width: 320px;
+    margin: 0 auto;
+}
+.contact-information {
+    margin: 0;
+}
+label {
+    display: block;
 }
 
-fieldset {
-    display: flex;
-    flex-direction: column;
+/* Newsletter */
+.newsletter {
+    margin: 0;
 }
-
-select {
-    font-size: .75rem;
-}
-
 textarea {
-    width: 100%;
+    min-width: 100%;
+    min-height: 8rem;
 }
 
 /* Media Queries */
